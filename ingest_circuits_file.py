@@ -45,4 +45,4 @@ circuits_renamed_df = circuits_selected_df.withColumnRenamed("circuitId", "circu
 
 # COMMAND ----------
 
-circuits_renamed_df.write.parquet("/mnt/group5dxc/silver/circuits")
+circuits_renamed_df.write.csv("/mnt/group5dxc/silver/circuits")

@@ -42,5 +42,5 @@ races_selected_df = races_with_ingestion_date_df.select(col('raceId').alias('rac
 
 # COMMAND ----------
 
-races_selected_df.write.mode('overwrite').partitionBy('race_year').parquet("/mnt/group5dxc/silver/races")
+races_selected_df.write.mode('overwrite').csv("/mnt/group5dxc/silver/races")
 
